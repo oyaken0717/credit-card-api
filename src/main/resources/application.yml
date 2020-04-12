@@ -1,0 +1,4 @@
+spring:
+  server:
+    servlet:
+      context-path: /credit-card-api
