@@ -5,7 +5,7 @@ http://192.168.●.●:8080/credit-card-api/credit-card/payment
 ■キャンセル処理<br>
 http://192.168.●.●:8080/credit-card-api/credit-card/cancel
 
-■クレジットカードAPI実装マニュアル(Slackで以下をコピーして送ってください。)<br>
+■クレジットカードAPI(送る側)実装マニュアル(Slackで以下の文章の部分だけをそのままコピーして送ってください。)<br>
 <br>
  ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
  お疲れ様です。<br>
