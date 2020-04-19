@@ -86,18 +86,33 @@ public class CreditCardController {
 	@RequestMapping(value = "/cancel", method = RequestMethod.POST)
 	@ResponseBody
 	public Map<String, String> cancel(@RequestBody Credit credit) {
+		boolean flag = true;
 		// ■ @RequestBody:リクエストを取得し、指定された型に値を注入
 		Map<String, String> map = new HashMap<>();
+		//■ try①:Integer型に変換できるかチェック
 		try {
 			Integer.parseInt(credit.getOrder_number());
+		} catch (Exception e) {
+			//■ try②:Long型に変換できるかチェック(シーケンス処理の関係)
+			try {
+				Long.parseLong(credit.getOrder_number());
+			} catch (Exception x) {
+				flag = false;
+			}
+		}
+	
+		if (flag) {
 			map.put("status", "success");
 			map.put("message", "canceld.");
 			map.put("error_code", "E-00");
-		} catch (Exception e) {
+		}
+		
+		if (flag == false) {
 			map.put("status", "error");
 			map.put("message", "何らかの理由で数値以外の値が含まれています。");
-			map.put("error_code", "E-03");
+			map.put("error_code", "E-03");			
 		}
+		
 		// ■ 出力結果 {"error_code":"E-00","message":"canceld.","status":"success"}
 		return map;
 	}
