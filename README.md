@@ -6,14 +6,6 @@ http://192.168.●.●:8080/credit-card-api/credit-card/payment
 http://192.168.●.●:8080/credit-card-api/credit-card/cancel
 
 ■クレジットカードAPI(送る側)実装マニュアル<br>
-　(Slackで以下の文章のをそのままコピーして送ってください。)<br>
-<br>
-![スクリーンショット 2020-04-18 15 11 38](https://user-images.githubusercontent.com/46299780/79629798-3fd96000-8187-11ea-9e70-1f16bfeaf650.png)
-<br><br>
- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
- お疲れ様です。<br>
- クレジットカードAPI実装マニュアルの権限の件です!<br>
- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
  <br>
 ![スクリーンショット 2020-04-14 8 59 58](https://user-images.githubusercontent.com/46299780/79172118-c9f39280-7e2e-11ea-9ac7-2771d3d717da.png)
 
